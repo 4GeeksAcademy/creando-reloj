@@ -1,26 +1,17 @@
 import React from "react";
+import Contador from "./contador";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+// import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
+const Home = ({digitos1, digitos2, digitos3, digitos4, digitos5, digitos6}) => {
 	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			<Contador digitos1={digitos1} digitos2={digitos2} digitos3={digitos3} digitos4={digitos4} digitos5={digitos5} digitos6={digitos6} />
 		</div>
 	);
 };
 
 export default Home;
+
